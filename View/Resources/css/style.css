@@ -1,0 +1,176 @@
+.header-right {
+    float: right;
+    margin: 0px 20px 0px 0px;
+}
+
+body {
+    margin: 0px 0px 0px;
+}
+
+.headerWeb {
+    overflow: hidden;
+    font-family:sans-serif;
+    background: aqua;
+}
+
+footer {
+    overflow: hidden;
+    font-family: sans-serif;
+    background-color: cadetblue;
+    margin: 10px 0px 10px 0px;
+    padding: 15px 15px;
+}
+
+.headerWeb a {
+    float: left;
+    color:black;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color:black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.header-right a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: dodgerblue;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color:red;
+}
+
+.show {
+    display: block;
+}
+
+#layout {
+    display: grid;
+    /*background:linear-gradient(to right, white, red, white);*/
+    padding:0px;
+    column-gap: 0px;
+    row-gap: 0px;
+    vertical-align: middle;
+    grid-template-areas:
+        'Header Header Header Header'
+        'body body body body'
+        'footer footer footer footer';
+}
+
+.formulario {
+    padding: 16px;
+    background-color: white;
+}
+
+section input[type=text], input[type=password], input[type=number], input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+section input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, input[type=email]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.SignInButton {
+    background-color: dodgerblue;
+    color: black;
+    padding: 16px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100%;
+}
+
+#buttonBLE {
+    width: 250px;
+    padding: 10px 24px;
+    background-color: dodgerblue;
+    color: white;
+    margin: 0px 0px 0px 10px;
+    float: left;
+}
+
+#buttonBLE:hover {
+    background-color: deepskyblue;
+}
+
+#buttonBLErmv {
+    width: 250px;
+    padding: 10px 24px;
+    background-color: dodgerblue;
+    color: white;
+}
+
+#buttonsPills {
+    text-align: center;
+}
+
+#buttonBLErmv:hover {
+    background-color: deepskyblue;
+}
+
+#buttonBLEadd {
+    width: 250px;
+    padding: 10px 24px;
+    background-color: dodgerblue;
+    color: white;
+    float: right;
+    margin: 0px 10px 0px 0px;
+}
+
+#buttonBLEadd:hover {
+    background-color: deepskyblue;
+}
+
+#quantity {
+    float: right;
+}
+
+#medicines {
+    margin: 0px 10px 0px 10px;
+}
+
+#logo {
+    float: left;
+}
+
+#alumnos {
+    float: right;
+}
