@@ -43,27 +43,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                     if ((`${snapshot.val()[key].credentials.email}` === "<?php echo $email ?>") &&
                         (`${snapshot.val()[key].credentials.password}` === "<?php echo $password ?>"))
                     {
-                        /*user = key;
-                        get(child(dbRef, 'users/patients/' + key + '/drugs/')).then((snapshot1) => {
-                            if (snapshot1.exists()) {
-                                Object.keys(snapshot1.val()).forEach((key) => { //show all the lines of the database table users
-
-                                    //string_medicines.push(key);
-                                    string_medicines = string_medicines + key + ",";
-                                    string_pills = string_pills + `${snapshot1.val()[key].pills_left}` + ",";
-                                });
-                            } else {
-                                console.log("No data available");
-                            }
-                        }).catch((error) => {
-                            console.error(error);
-                        });*/
-
                         user = key;
-
-
                     }
-                    //console.log(`${snapshot.val()[key].credentials.email}`);
+
                 });
             } else {
                 console.log("No data available");
